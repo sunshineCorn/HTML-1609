@@ -1,0 +1,480 @@
+
+			.fl{
+				float: left;
+			}
+			.fr{
+				float: right;
+			}
+			
+			
+			#main{
+				height: 453px;
+				width: 100%;
+				overflow: hidden;
+				position: relative;
+			}
+			.main1,.main2,.main3,.main4,.main5,.main6{
+				height: 453px;
+				width: 100%;
+				position: absolute;
+				display: none;
+				z-index: 0;
+			}
+			.main1Img,.main2Img,.main3Img,.main4Img,.main5Img,.main6Img{
+				width: 1200px;
+				height: 453px;
+				margin: 0 auto;
+				cursor: pointer;
+			}
+			.main1{
+				background:#34323d ;
+				display: block;
+				z-index: 1;
+			}
+			.main1Img{
+				background: url(../img/homePage/main1.jpg);
+			}
+			.main2{
+				background:#181818 ;
+			}
+			.main2Img{
+				background: url(../img/homePage/main2.jpg);
+			}
+			.main3{
+				background:#c2c8d6 ;
+			}
+			.main3Img{
+				background: url(../img/homePage/main3.jpg);
+			}
+			.main4{
+				background:#feeef8 ;
+			}
+			.main4Img{
+				background: url(../img/homePage/main4.jpg);
+			}
+			.main5{
+				background:#cae3c6 ;
+			}
+			.main5Img{
+				background: url(../img/homePage/main5.jpg);
+			}
+			.main6{
+				background:#e6cc91 ;
+			}
+			.main6Img{
+				background: url(../img/homePage/main6.jpg);
+			}
+			.main7{
+				height: 453px;
+				width: 1200px;
+				position: relative;
+				margin: 0 auto;
+			}
+			.main7 .chooce{
+				position: absolute;
+				top: 400px;
+				left:530px ;
+				z-index: 3;
+			}
+			.main7 .chooce span{
+				display: inline-block;
+				height: 20px;
+				width: 20px;
+				border-radius:50% ;
+				opacity: 0.7;
+				background: black;
+				color: #fff;
+				text-align: center;
+				line-height: 20px;
+			}
+			.main-left{
+				position: absolute;
+				height: 441px;
+				width: 210px;
+				background:#c81623 ;
+				padding-top: 12px ;
+				overflow: hidden;
+				z-index: 100;
+			}
+			.main-left ul{
+				overflow: hidden;
+			}
+			.main-left .kind{
+				height: 459px; 
+				width: 990px;
+				position: absolute;
+				background: #fff;
+				left:210px;
+				top:0
+			}
+			.main-left .kind ul{
+				float:left ;
+				margin:20px 0 0 100px ;
+			}
+			.main-left .kind li{
+				padding:6px 0;
+				color: black;
+				float: none;
+			}
+			.main-left .kind .firest{
+				font-size: 16px;
+				color: black;
+				margin-bottom: 5px;
+				font-weight: bold;
+			}
+			.main-left li{
+				float: left;
+				
+			}
+			.main-left .specialLi{
+				background: #fff;
+				border-radius:3px ;
+				height: 18px;
+			}
+			.main-left .specialA{
+				color: #C40000;
+				line-height: 18px;
+			}
+			.main-left p{
+				margin-bottom: 9px;
+			}
+			.main-left li a{
+				color: #FFFFFF;
+				padding: 0 7px;
+				line-height: 24px;
+				cursor: pointer;
+			}
+			.main-left span{
+				color: #FFFFFF;
+				font-weight:bold ;
+				margin-right: 14px;
+			}
+			.main-left div{
+				margin-bottom: 11px;
+			}
+			.main-left i{
+				color: #FFF;
+				margin-right:10px;
+				font-size:15px ;
+			}
+			.main-right{
+				height: 430px;
+				width: 190px;
+				position: absolute;
+				top: 14px;
+				right: 0;
+				background: url(../img/homePage/main-right.png) no-repeat;
+				cursor: pointer;
+				z-index: 100;
+			}
+			#buyWine{
+				width: 1200px;
+				padding-top:10px ;
+				margin: 0 auto;
+				height: 1043px;
+			}
+			#buyWine .hilarity{
+				width: 990px;
+				height: 171px;
+				overflow: hidden;
+			}
+			#buyWine .hilarity img{
+				float: right;
+			}
+			#buyWine .flashSales{
+				height: 273px;
+				float: left;
+			}
+			#buyWine .flashSales ul{
+				overflow: hidden;
+				margin-bottom: 10px;
+			}
+			#buyWine .flashSales li{
+				float: left;
+				color: #adadad;
+				line-height: 16px;
+				padding: 0 10px;
+			}
+			#buyWine .flashSales .li1{
+				color: #515151;
+				font-size: 16px;
+				border-right: 1px solid #515151;
+				padding-left: 0;
+			}
+			#buyWine .flashSales dl{
+				float: left;
+				width: 160px;
+				border: 1px solid #ddd;
+				padding: 0 9px 0 15px;
+			}
+			#buyWine .flashSales dt{
+				margin-bottom: 25px;
+			}
+			#buyWine .flashSales dd{
+				line-height: 20px;
+				margin-left: 10px;
+			}
+			#buyWine .news{
+				height: 273px;
+				float: right;
+			}
+			#buyWine .news ul{
+				overflow: hidden;
+				margin-bottom: 10px;
+			}
+			#buyWine .news li{
+				float: left;
+				color: #adadad;
+				line-height: 16px;
+				padding: 0 10px;
+			}
+			#buyWine .news .li1{
+				color: #515151;
+				font-size: 16px;
+				border-right: 1px solid #515151;
+				padding-left: 0;
+			}
+			#buyWine .news dl{
+				height: 221px;
+				border: 1px solid #ddd;
+				padding: 12px;
+				
+			}
+			#buyWine .news dd{
+				line-height: 30px;
+				width: 239px;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				color: #999;
+			}
+			#buyWine .double11{
+				margin-top:20px ;
+				overflow: hidden;
+				float: left;
+			}
+			#buyWine .recommend{
+				float: left;
+				width: 1200px;
+				height: 238px;
+				margin-top: 25px;
+			}
+			#buyWine .recommend ul{
+				overflow: hidden;
+				margin-bottom: 10px;
+			}
+			#buyWine .recommend li{
+				float: left;
+				color: #adadad;
+				line-height: 16px;
+				padding: 0 10px;
+			}
+			#buyWine .recommend .li1{
+				color: #515151;
+				font-size: 16px;
+				border-right: 1px solid #515151;
+				padding-left: 0;
+			}
+			#buyWine .recommend dl{
+				height: 182px;
+				width: 239px;
+				border: 1px solid #999;
+				float: left;
+				padding-top: 15px;
+				position: relative;
+			}
+			#buyWine .recommend dl dd,dt{
+				margin: 0 auto;
+			}
+			#buyWine .recommend .firest{
+				font-size: 18px;
+				margin-bottom:15px ;
+				width: 200px;
+				text-align: center;
+				font-weight: bold;
+			}
+			#buyWine .recommend .second{
+				margin-bottom:8px ;
+				width: 200px;
+				text-align: center;
+				
+			}
+			#buyWine .recommend .thirst{
+				width: 60px;
+				height: 18px;
+				border-radius: 5px;
+				background: #fb3c22;
+				color: #fff;
+				text-align: center;
+				line-height: 18px;
+			}
+			#buyWine .recommend .fourst{
+				height:100px;
+				width: 100px;
+				position: absolute;
+				top: 90px;
+				left:75px ;
+			}
+			#floor{
+				height: 508px;
+				margin: 24px auto 0;
+				width: 1200px;
+			}
+			#floor .maotai{
+				width:440px ;
+				height:237px ;
+				overflow: hidden;
+				position: relative;
+			}
+			.maotai .maotai-1{
+				height:237px ;
+				position: absolute;
+			}
+			.maotai-left,.maotai-right{
+				height: 62px;
+				width: 28px;
+				background: black;
+				opacity: 0.5;
+				position: absolute;
+				z-index: 1;
+				line-height: 62px;
+				text-align: center;
+				color: #fff;
+				top: 88px;
+				cursor: pointer;
+			}
+			.maotai .chooce1{
+				position: absolute;
+				top: 210px;
+				left:210px ;
+				z-index: 3;
+			}
+			.maotai .chooce1 span{
+				display: inline-block;
+				height: 12px;
+				width: 12px;
+				border-radius:50% ;
+				opacity: 0.7;
+				background: black;
+				color: #fff;
+				text-align: center;
+			}
+			#floor .riceWine{
+				height: 69px;
+				width: 300px;
+				background: #fff6e5;
+				padding: 23px 0 0 20px;
+			}
+			#floor .riceWine li{
+				float: left;
+				width: 74px;
+				border-right:1px solid #ac6f05 ;
+				height: 18px;
+				line-height: 18px;
+				text-align: center;
+				margin-bottom: 12px;
+				color: #ac6f05;
+			}
+			#floor .riceWine .specialLi{
+				border-right: none;
+				
+			}
+			#floor .flag{
+				display: inline-block;
+				height: 22px;
+				width: 29px;
+				line-height: 22px;
+				text-align: center;
+				color: #fff;
+				background: #d00d0f;
+			}
+			#floor .goods{
+				overflow: hidden; 
+				clear: both; 
+				margin-top:7px ;
+				float: left;
+				border-top:2px solid #d00d0f ;
+			}
+			#floor5{
+				height: 432px;
+				margin: 24px auto 0;
+				width: 1200px;
+			}
+			#floor5 .goods{
+				overflow: hidden; 
+				clear: both; 
+				margin-top:7px ;
+				float: left;
+				border-top:2px solid #d00d0f ;
+			}
+			
+			#floor5 .goods1{
+				margin-bottom: 20px;
+			}
+			#floor5 .goods1 div{
+				margin-left: 5px;
+			}
+			#floor5 .flag{
+				display: inline-block;
+				height: 22px;
+				width: 29px;
+				line-height: 22px;
+				text-align: center;
+				color: #fff;
+				background: #d00d0f;
+			}
+			#floor6{
+				height: 417px;
+				margin: 24px auto 0;
+				width: 1200px;
+				
+			}
+			#floor6 .goods{
+				overflow: hidden; 
+				clear: both; 
+				margin-top:7px ;
+				float: left;
+				border: 1px solid #ddd;
+				border-top:2px solid #d00d0f ;
+				padding-bottom: 15px;
+				position: relative;
+			}
+			#floor6 .goods .span{
+				position: absolute;
+				bottom: 0;
+				left: 600px;
+				height: 20px;
+				width: 50px;
+				background: black;
+				opacity: 0.5;
+				color: #fff;
+				line-height: 20px;
+				text-align: center;
+			}
+			#floor6 .goods .span span{
+				display: inline-block;
+				height: 20px;
+				width: 20px;
+				cursor: pointer;
+			}
+			#floor6 .goods div{
+				height:108px ;
+				width: 220px;
+				margin:15px 0 0 15px ;
+				float: left;
+				position: relative;
+				overflow: hidden;
+			}
+			#floor6 .goods img{
+				position: absolute;
+			}
+			#floor6 .flag{
+				display: inline-block;
+				height: 22px;
+				width: 29px;
+				line-height: 22px;
+				text-align: center;
+				color: #fff;
+				background: #d00d0f;
+			}
+			

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+			<link rel="stylesheet" type="text/css" href="css/head.css"/>
+			<script src="js/base.js"></script>
+		<style>
+			
+		</style>
+		<script>
+			$(function(){
+				
+				
+				$('.attent').hover(function(){
+				$(this).css({"background":"#fff7d2",color:"red"});
+				$("img",this).css({"display":"block"});
+			},function(){
+				$(this).css({"background":"none",color:"black"});
+				$("img",this).css({"display":"none"});
+		})
+				$('li:gt(0)',$(".head")).hover(function(){
+				$("a",this).css("color","red");
+				console.log($("a",this).text())
+			},function(){
+					$("a",this).css("color","black");
+				
+					if($("a:first",this).text()=="提意见"){
+					$("a:first",this).css("color","red")
+				}
+			})
+			
+	//content
+	var yanzeng=false;
+	$('.unflod').click(function(){
+		index=this;
+		if(yanzeng==false){
+			$(".smallContent").animate({
+				top:"83px",
+				height:"0",
+			},1000,function(){
+				$("#content").animate({
+				height:"270px",
+			},1000,function(){
+				$(index).text("收起");
+			});
+			});	
+			yanzeng=true;
+		}
+		
+		else{
+			$("#content").animate({
+				height:"83px",
+			},1000,function(){
+				$(".smallContent").animate({
+					height:"83px",
+					top:"0",
+				},function(){
+					$(index).text("展开");
+				})
+			})
+			yanzeng=false;
+		}
+	})
+	
+	//broadcast
+	$("p","#broadcast").click(function(){
+		$("#broadcast").css("display","none");
+	})
+	
+	//rightFiexd
+	$("li:last","#rightFiexd").click(function(){
+		$(document).scrollTop("0")
+	})
+	$("li:last","#rightFiexd").hover(function(){
+		$(".back").css("display","block").animate({
+			left:"-104px"
+		},400);
+	},function(){
+		$(".back").animate({
+			left:"-134px",
+		},400,function(){
+			$(".back").css("display","none");
+		})
+	})
+			})
+		</script>
+	</head>
+	<body>
+		<div id="rightFiexd">
+			<ul>
+				<li><i class="fa fa-user-md" ></i></li>
+				<a href="shoppingCar.html"><li><i class="fa fa-shopping-cart" style="display: block;">购物车</i></li></a>
+				<li>劵</li>
+				<li><i class="fa fa-star-o"></i></li>
+				<li><i class="fa fa-qrcode"></i></li>
+				<li><i class="fa fa-thumbs-up"></i></li>
+				<li><i class="fa fa-angle-up"></i><div class="back">返回顶部</div></li>
+			</ul>
+			
+		</div>
+		<div id="wrap-head">
+			<div class="head">
+				<div class="attent fl">
+					<i class="fa fa-qrcode fl"></i>关注购酒网<i class="fa fa-angle-down fr"></i>
+					<img src="img/homePage/qrcode555_06.jpg" />
+				</div>
+				<p class="phone fr"><i class="fa fa-phone"></i>400-722-1919</p>
+				<ul class="fr">
+					<li><a href="#"><span class="kehu">某某某</span></a><span>Hi,请</span><a style="color: #0066cb;" href="logo.html">登录</a>/<a style="color: #0066cb" href="register.html">注册</a></li>
+					<li><a>我的订单</a></li>
+					<li>
+							<div><a>用户中心</a><i class="fa fa-angle-down"></i></div>
+							<div><a>商品评论</a></div>
+							<div><a>收藏夹</a></div>
+							<div><a>我的电子券</a></div>
+					</li>
+					<li><a>在线客服</a></li>
+					<li><a>帮助</a></li>
+					<li><a style="color: red;">提意见</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="content">
+			<div class="smallContent"></div>
+			<div class="unflod">展开</div>
+		</div>
+		<div id="broadcast">
+			<i class="fa fa-volume-up" style="margin-right: 5px;"></i>
+			<span>与购酒相约每天十点限时秒杀9.9/6瓶</span>
+			<p class="fr">关闭</p>
+		</div>
+		<div id="wrap-nav">
+			<div class="nav">
+				<img class="logo fl" src="img/homePage/logo.jpg"/>
+				<img class="luckBag fl" src="img/homePage/nav.gif" />
+				<img class="jianNanChun" src="img/homePage/nav1.gif" />
+				<div class="fr car">我的购物车</div>
+				<div class="search fr">
+					<input type="text" class="text fl"/>
+					<input type="button" value="搜索" class="button fl"/>
+				</div>
+				<ul class="fl wine">
+						<li ><a href="particulars.html">茅台</a></li>
+						<li><a>郎酒</a></li>
+						<li><a>五粮液</a></li>
+						<li><a>剑南春</a></li>
+						<li><a>泸州老窖</a></li>
+						<li><a>洋河</a></li>
+				</ul>
+				
+				<div class="fl goods">全部商品分类</div>
+				<ul class="fl type">
+						<li><a style="color: #c40000;">首页</a></li>
+						<li><a>特卖会</a></li>
+						<li><a>进口馆</a></li>
+						<li><a>尝新</a></li>
+						<li><a>商家采购</a></li>
+						<li><a>醉爱小酒版</a></li>
+						<li><a>高端收藏酒</a></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

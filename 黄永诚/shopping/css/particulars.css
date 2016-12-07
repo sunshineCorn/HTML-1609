@@ -1,0 +1,501 @@
+		
+
+
+	fl{
+		float: left;
+	}
+	fr{
+		float: right;
+	}
+	#maotai{
+		width: 1200px;
+		overflow:hidden ;
+		margin: 0 auto;
+	}
+	.maotai-left{
+		width: 401px;
+	}
+	.maotai-left ul{
+		overflow: hidden;
+	}
+	.maotai-left li{
+		float: left;
+		margin-right: 9px;
+		padding: 18px 0;
+	}
+	.maotai-left i{
+		float: left;
+		margin-right: 9px;
+		padding: 18px 0;
+	}
+	.maotai{
+		border: 1px solid #dfdfdf;
+		position: relative;
+	}
+	
+	.maotai img{width:400px;}
+	/*=S zoom big pic */
+	.jqzoom{display:inline-block;position:relative;cursor:move;}
+	div.zoomdiv{
+		z-index:100;
+		position:absolute;
+		top:0px;
+		left:0px;
+		width:200px;
+		height:200px;
+		background:#fff;
+		border:1px solid #ccc;
+		display:none;
+		text-align:center;
+		overflow:hidden;
+	}
+	div.jqZoomPup{
+		z-index:10;
+		visibility:hidden;
+		position:absolute;
+		top:0px;
+		left:0px;
+		width:50px;
+		height:50px;
+		border:1px solid #aaa;
+		background:#fff url(zoom.gif) 50% top  no-repeat;
+		opacity:.5;
+		-moz-opacity:.5;
+		-khtml-opacity:.5;
+		filter:alpha(Opacity=50);
+	}
+	
+	
+	
+	
+	.smallmaotai{
+		border: 1px solid #dfdfdf;
+		overflow: hidden;
+		border-top:none ;
+	}
+	.smallmaotai img{
+		height: 52px;
+		width: 52px;
+		margin: 2px;
+		float: left;
+	}
+	.smallmaotai div{
+		border: 2px solid red;
+		float: left;
+		margin: 16px 9px;
+		cursor: pointer;
+	}
+	.share p{
+		overflow: hidden;
+	}
+	.share img{
+		float: left;
+		height: 16px;
+		width: 16px;
+		margin-right: 10px;
+	}
+	.share{
+		overflow: hidden;
+		padding: 11px 24px;
+		border: 1px solid #dfdfdf;
+		border-top:none ;
+	}
+	.maotai-center{
+		width: 532px;
+		padding: 45px 29px 0;
+	}
+	.maotai-center h3{
+		font-size: 16px;
+		font-weight: bold;
+		margin-bottom:13px;
+	}
+	.active{
+		background: #f3f3f3;
+		overflow: hidden;
+		padding-left:15px ;
+	}
+	.active p{
+		margin: 21px 0;
+	}
+	.active p span{
+		color: red;
+	}
+	.distribution span{
+		height:23px;
+		width: 84px;
+		display: inline-block;
+		border: 1px solid #ccc;
+		line-height: 23px;
+		text-align: center;
+		margin: 12px 0 17px 0;
+		position: relative;
+	}
+	.address{
+		display:none ;
+		border: 1px solid #dfdfdf;
+		padding: 0 10px 12px 10px;
+		position: absolute;
+		background: #fff;
+	}
+	.address p{
+		margin-top: 12px;
+	}
+	.attention{
+		border-top:1px dashed #dfdfdf;
+		border-bottom:1px dashed #dfdfdf;
+		padding-left:25px ;
+	}
+	.attention span{
+		margin: 13px 0;
+		display: inline-block;
+		padding: 0 25px;
+	}
+	.chooce{
+		overflow: hidden;
+		margin: 10px 0;
+	}
+	.chooce li{
+		padding: 8px 11px;
+		border:1px solid #dfdfdf;
+		float: left;
+		margin-right: 6px;
+		margin-bottom: 6px;
+		cursor: pointer;
+	}
+	.chooce span{
+		padding: 5px 0 80px 0;
+	}
+	.num{
+		padding-left: 25px;
+		overflow:hidden ;
+		padding-bottom: 30px;
+	}
+	.num p{
+		padding: 7px 0;
+		display: inline-block;
+	}
+	.num div{
+		width: 75px;
+		overflow: hidden;
+	}
+	.num span{
+		border:1px solid #dfdfdf;
+		padding: 3px 6px;
+		margin: 0 0 2px 4px;
+		display: inline-block;
+		cursor: pointer;
+	}
+	.buy .first{
+		border: 1px solid #c20106;
+		color: #c20106;
+		background: #ffeeee;
+		padding: 11px 57px;
+		display: inline-block;
+		margin-left:35px ;
+		cursor: pointer;
+	}
+	.buy .second{
+		color: #fff;
+		background: #c20106;
+		padding: 11px 57px;
+		display: inline-block;
+		cursor: pointer;
+	}
+	.maotai-right{
+		padding-top: 9px;
+		float: right;
+		width: 200px;
+	}
+	.maotai-right li{
+		text-align: center;
+		border-top: 1px solid #f1f1f1;
+	}
+	.maotai-right ul .first{
+		padding: 3px 0 8px;
+	}
+	.maotai-right ul .second{
+		padding: 13px 0;
+	}
+	.maotai-right ul .second .p{
+		padding: 3px;
+		background: #a48c79;
+		border-radius: 3px;
+		margin-top: 9px;
+		color: #fff;
+		display: inline-block;
+	}
+	.maotai-right ul .thirst{
+		padding: 26px 0 20px;
+	}
+	.maotai-right ul .thirst span{
+		display: inline-block;
+		background: #e4393c;
+		color: #fff;
+		padding: 4px 5px;
+		border-radius: 3px;
+	}
+	.maotai-right ul .fourst{
+		padding-top: 10px;
+	}
+	.maotai-right ul .fourst img{
+		margin-bottom: 28px;
+	}
+	#content1{
+		width: 1200px;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+	.content1-left{
+		width: 203px;
+	}
+	.correlation{
+		overflow: hidden;
+		border:1px solid #c9c9c9;
+		padding-bottom:6px ;
+		margin-bottom: 11px;
+	}
+	.correlation p{
+		padding: 9px 0 7px 0;
+		text-indent: 24px;
+		background: #f7f7f7;
+		border-bottom:1px solid #c9c9c9 ;
+	}
+	.correlation ul{
+		float: left;
+	}
+	.correlation li{
+		padding: 6px 45px 6px 11px;
+	}
+	.other{
+		overflow: hidden;
+		border:1px solid #c9c9c9;
+		padding-bottom:6px ;
+		margin-bottom: 11px;
+	}
+	.other p{
+		padding: 9px 0 7px 0;
+		text-indent: 24px;
+		background: #f7f7f7;
+		border-bottom:1px solid #c9c9c9 ;
+		/*position:  ;*/
+	}
+	.other ul{
+		float: left;
+	}
+	.other li{
+		padding: 6px 10px 6px 11px;
+	}
+	.content1-left .goods{
+		border: 1px solid #c9c9c9;
+	}
+	.content1-left .goods li{
+		text-align: center;
+		line-height: 24px;
+		border-bottom: 1px dashed #c9c9c9;
+		padding-bottom: 23px;
+	}
+	.content1-left .goods li span{
+		display: inline-block;
+		border: 1px solid #c9c9c9;
+		padding: 6px 11px;
+	}
+	.content1-right ul{
+		height: 39px;
+		width: 990px;
+		background: #f7f7f7;
+		z-index: 100;
+	}
+	.content1-right ul li{
+		float: left;
+		height: 30px;
+		border-top:2px solid #999999;
+		border-bottom:1px solid #c9c9c9 ;
+		margin-top:5px ;
+		line-height: 30px;
+		width: 685px;
+	}
+	.content1-right ul .last{
+		float: left;
+		height: 30px;
+		border-top:2px solid #999999;
+		border-bottom:1px solid #c9c9c9 ;
+		margin-top:5px ;
+		padding: 0 14px;
+		line-height: 30px;
+		width: 48px;
+	}
+	.content1-right ul li.last:hover{
+		margin-top: 0;
+		height:35px;
+		border-top:2px solid red;
+		background: #fff;
+		border-bottom: none;
+		cursor: pointer;
+		color: red;
+	}
+	td{
+		width:246px;
+		height:26px ;
+		text-indent: 18px;
+	}
+	.pack{
+		display: inline-block;
+		padding: 10px 0;
+	}
+	#specifics{
+		width: 990px;
+		overflow: hidden;
+		
+	}
+	#specifics img{
+		float: left;
+	}
+	#specifics div{
+		float: left;
+		padding-bottom: 21px;
+	}
+	#specifics p{
+		background:url(../img/particulars/boder1.jpg) repeat-x;
+		text-indent: 23px;
+		margin-bottom: 14px;
+		line-height: 25px;
+	}
+	#specifics span{
+		line-height: 23px;
+		text-indent: 21px;
+		padding: 0 18px;
+	}
+	#quality{
+		border:1px solid #c9c9c9;
+		overflow: hidden;
+		width: 990px;
+	}
+	#quality p{
+		background: #f7f7f7;
+		padding: 10px 0;
+		text-indent: 10px;
+		margin-bottom: 16px;
+		border-bottom: 1px solid #c9c9c9;
+		float: left;
+		width: 990px;
+	}
+	#quality img{
+		float: left;
+		margin-left: 14px;
+	}
+	#comment{
+		overflow: hidden;
+		width: 990px;
+		border:1px solid #c9c9c9;
+		margin-top: 17px;
+		position: relative;
+	}
+	.page1{
+		height: 20px;
+		width:20px ;
+		background: black;
+		opacity: 0.4;
+		text-align: center;
+		line-height: 20px;
+		display: inline-block;
+		color: #fff;
+		margin-left: 5px;
+		cursor: pointer;
+	}
+	.page{
+		position: absolute;
+		bottom: 0;
+		left:490px;
+	}
+	#comment .p{
+		background: #f7f7f7;
+		padding: 10px 0;
+		text-indent: 15px;
+		margin-bottom: 16px;
+		border-bottom: 1px solid #c9c9c9;
+		float: left;
+		width: 990px;
+	}
+	.comment-left{
+		float: left;
+		width: 72px;
+		margin:0 0 36px 25px;
+		text-align: center;
+		line-height: 16px;
+		clear: left;
+	}
+	.comment-right{
+		border: 1px solid #bcdc9b;
+		width: 800px;
+		padding: 0 14px 20px;
+		overflow: hidden;
+		float: right;
+		margin: 0 25px 24px 0;
+	}
+	.comment-right button{
+		float: right;
+	}
+	.comment-right .p1 img{
+		float: left;
+	}
+	.comment-right .p1 span{
+		float: right;
+	}
+	.comment-right p{
+		line-height: 22px;
+	}
+	.comment-right .p1{
+		overflow: hidden;
+		line-height: 22px;
+		border-bottom: 1px solid #bcdc9b;
+	}
+	.comment-right .reply{
+		margin-top: 50px;
+		display: none;
+	}
+	.comment-right .reply .text{
+		background: none;
+		width: 730px;
+		
+	}
+	#refer{
+		overflow: hidden;
+		width: 990px;
+		border:1px solid #c9c9c9;
+		margin: 17px 0;
+	}
+	#refer .p{
+		background: #f7f7f7;
+		padding: 10px 0;
+		text-indent: 15px;
+		margin-bottom: 16px;
+		border-bottom: 1px solid #c9c9c9;
+		float: left;
+		width: 990px;
+	}
+	#refer p{
+		line-height:18px;
+	}
+	#refer .classP{
+		margin-right: 24px;
+	}
+	.refer1{
+		overflow: hidden;
+		margin-bottom: 10px;
+		width: 990px;
+	}
+	.refer1 div{
+		width: 666px;
+		margin-left: 24px;
+		clear: right;
+	}
+	.refer1 p span{
+		color: red;
+	}
+	.refer1 .specialP{
+		color: red;
+	}
+	
+	
+	
+	
