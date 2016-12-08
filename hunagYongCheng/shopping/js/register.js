@@ -1,4 +1,9 @@
 $(function(){
+	
+					var verify1=false;
+					var verify2=false;
+					var verify3=false;
+					var verify4=false;
 					$("input:eq(0)",".zhuce1").blur(function(){
 						verify2=true;
 						var pattern=/^[1][0-9]{10}$/g;
