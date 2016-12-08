@@ -1,0 +1,112 @@
+	
+
+
+		.fl{
+				float: left;
+			}
+			.fr{
+				float: right;
+			}
+		#wrap-link{
+				height:343px ;
+				width:100% ;
+				background: url(../img/homePage/footer_Bg.gif);
+			}
+			#wrap-link .link{
+				height: 325px;
+				width: 1150px;
+				margin: 0 auto;
+				padding: 9px 25px;
+			}
+			#wrap-link .service{
+				height: 75px;
+				width: 301px;
+				background:url(../img/homePage/tel.png) no-repeat ;
+				margin-top: 20px;
+			}
+			#wrap-link .service1{
+				height: 32px;
+				width: 176px;
+				background:url(../img/homePage/onlineServ.png) no-repeat ;
+				margin-top: 60px;
+				margin-left: 31px;
+			}
+			#wrap-link .position{
+				height: 122px;
+				width: 310;
+				margin: ;
+			}
+			#wrap-link .position p{
+				color: #fff;
+				float: right;
+				margin-bottom: 7px;
+			}
+			#wrap-link .position .p{
+				overflow: hidden;
+				width: 183px;
+				margin: 17px 21px 0 0;
+			}
+			.link .border{
+				width: 1151px;
+				height: 2px;
+				background: #787878;
+			}
+			.link ul{
+				float:left ;
+				margin:20px 0 0 100px ;
+			}
+			.link li{
+				padding:6px 0;
+				color: #a9a9a9;
+			}
+			.link .firest{
+				font-size: 16px;
+				color: #fff;margin-bottom: 5px;
+			}
+			#footer{
+				height: 205px;
+				width: 1200px;
+				margin: 0 auto;
+			}
+			#footer .guarantee{
+				height: 84px;
+				width: 1117px;
+				background:url(../img/homePage/baozheng_06.jpg) ;
+				margin: 0 auto;
+			}
+			#footer p{
+				height: 12px;
+				width: 550px;
+				text-align: center;
+				margin: 0 auto 18px;
+			}
+			#footer .sertion{
+				height:48px ;
+				width:350px;
+				background: url(../img/homePage/aut_06.jpg);
+				margin: 0 auto;
+			}
+			.parnner{
+				height: 12px;
+				width: 500px;
+				margin: 5px auto;
+				overflow: hidden;
+				margin-bottom: 18px;
+				position: relative;
+			}
+			.parnner-1{
+				width:500px;
+				height:24px;
+				position: absolute;
+				top: 0;
+			}
+			.parnner ul{
+				width: 500px;
+				height: 20px;
+				text-align: center;
+			}
+			.parnner li{
+				display: inline-block;
+				padding: 0 4px 0 5px;
+				border-right:1px solid black ;	
+			}

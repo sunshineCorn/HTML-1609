@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="../litd/jquery-2.1.1.min.js" ></script>
+		<script type="text/javascript" src="js/base.js"></script>
+		<link rel="stylesheet" href="../litd/font-awesome/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="../litd/reset.css"/>
+		<style type="text/css">
+			.fl{
+				float: left;
+			}
+			.fr{
+				float: right;
+			}
+			#head{
+				width: 990px;
+				height: 60px;
+				padding: 19px;
+				margin: 0 auto;
+			}
+			.help{
+				height: 18px;
+				width: 307px;
+				line-height: 18px;
+				margin-top: 15px;
+			}
+			.help ul .help-1{
+				float: left;
+				margin-right: 35px;
+				cursor: pointer;
+			}
+			.help ul .help-1 a{
+				padding-left:5px;
+				margin-right: 18px;
+			}
+			.help ul .help-2{
+				float: left;
+				color: red;
+				cursor: pointer;
+			}
+			.help ul .help-2 a{
+				padding-left:10px;
+				
+			}
+			
+			#wrap-content{
+				width: 100%;
+				height: 560px;
+				position: relative;
+				
+				overflow: hidden;
+			}
+			.content{
+				width: 100%;
+				height: 560px;
+				position: absolute;
+				top:0;
+			}
+			.bg{
+				width: 100%;
+				height: 560px;
+				background: url(img/login/login_bg.gif);
+			}
+			.wrap-content{
+				height: 490px;
+				width: 960px;
+				margin: 0 auto;
+				position: relative;
+				padding: 70px 15px 0;
+			}
+			.content-right{
+				height: 435px;
+				width: 487px;
+				border: 1px solid #c5c5c5;
+				background: #fff;
+			}
+			.register{
+				height:38px ;
+				width:114px;
+				background: #ff0421;
+				line-height: 38px;
+				text-align: center;
+				cursor: pointer;
+			}
+			.register a{
+				color: #fff;
+			}
+			.content-right h3{
+				background: url(img/login/member.gif) no-repeat;
+				width: 120px;
+				height: 28px;
+				margin: 21px auto 29px;
+				text-indent: 28px;
+				line-height: 28px;
+			}
+			.content-right ul{
+				border: 1px solid #c5c5c5;
+				width: 350px;
+				margin: 0 auto;
+				overflow: hidden;
+			}
+			.content-right li{
+				overflow: hidden;
+			}
+			.content-right li span{
+				height:52px ;
+				width: 49px;
+				display: inline-block;
+				float: left;
+				border-right:1px solid #c5c5c5 ;
+			}
+			span.text{
+				background: url(img/login/user.gif) no-repeat 18px 18px;
+			}
+			span.key{
+				background: url(img/login/password.gif) no-repeat 18px 18px;
+			}
+			.content-right ul li input{
+				background: none;
+				outline: none;
+				width: 300px;
+				height: 50px;
+				border: none;
+				float: left;
+				text-indent: 12px;
+			}
+			.forgetKey{
+				margin: 22px auto;
+				height: 12px;
+				width: 350px;
+			}
+			button{
+				background: none;
+				height: 53px;
+				width: 350px;
+				background: #fe0a2e;
+				border: none;
+				margin: 0 auto;
+				display: block;
+				font-size:14px ;
+				color: #fff;
+			}
+			.boder{
+				height: 7px;
+				width: 434px;
+				margin: 20px auto 13px;
+				background: url(img/login/border_03.gif) repeat-x;
+			}
+			.parnner{
+				height: 64px;
+				width: 164px;
+				margin-left: 70px;
+			}
+			.parnner p{
+				margin-bottom: 15px;
+			}
+			#footer{
+				height: 43px;
+				width: 100%;
+				background: #f2f2f2;
+				padding-top:90px ;
+				
+			}
+			#footer ul{
+				overflow: hidden;
+				width: 450px;
+				margin: 0 auto 0;
+			}
+			#footer ul li{
+				float: left;
+				padding: 0 13px 0 12px;
+				border-right:1px solid black ;
+			}
+			#footer p{
+				width: 512px;
+				margin: 10px auto 0;
+			}
+		</style>
+		<script>
+			$(function(){
+				$("input:eq(0)").val(getCookie("username"));
+				$("input:eq(1)").val(getCookie("key"));
+				setInterval(function(){
+				var left=parseInt($(".content").css("top"))-560;
+				if(!(left<-560)){
+					$($(".content")).animate({
+						top:left,
+					},20000);
+				}else{
+					$(".content").css("top",0)
+				}
+				},1000)
+				
+				$("button").click(function(){
+					if(getCookie("username")){
+						setCookie("logo","true");
+						location.href="homepage.html";
+					}else{
+						alert("请登录！");
+					}
+					return false;
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div id="head">
+			<img class="fl" src="img/login/hd_logo.jpg" />
+			<div class="help fr">
+			<span>您好，欢迎光临购酒网！</span>
+			<ul class="fr">
+				<li class="help-1"><i class="fa fa-cog"></i><a>帮助</a></li>
+				<li class="help-2"><i class="fa fa-user"></i><a>在线客服</a></li>
+			</ul>
+			</div>
+		</div>
+		<div id="wrap-content">
+			<div class="content">
+				<div class="bg"></div>
+				<div class="bg"></div>
+			</div>
+			
+			<div class="wrap-content">
+				<img class="content-left fl" src="img/login/Anniversary.jpg"/>
+				<div class="content-right fr">
+					<h3>购酒网会员登录</h3>
+					<form>
+						<ul>
+							<li style="border-bottom: 1px solid #c5c5c5;">
+								<span class="text"></span>
+								<input type="text" placeholder="邮箱/手机号码"/>
+							</li>
+							<li>
+								<span class="key"></span>
+								<input type="password" class="key"/>
+							</li>
+						</ul>
+						<div class="forgetKey">
+							<label class="fl"><input type="radio" class="fl"/>自动登陆</label>
+							<span class="fr">忘记密码</span>
+						</div>
+						<button>登录</button></a>
+					</form>
+					<div class="boder"></div>
+					<div class="parnner fl">
+						<p>使用合作帐号登录</p>
+						<img src="img/login/weixin.png" />
+						<img src="img/login/qq.png" />
+						<img src="img/login/zfb.png" />
+					</div>
+				</div>
+				<div class="register fr"><a href="register.html">注册新账号</a></div>
+			</div>
+			
+		</div>
+		
+		<div id="footer">
+			<ul>
+				<li>关于我们</li>
+				<li>联系我们</li>
+				<li>人才招聘</li>
+				<li>隐私声明</li>
+				<li>帮助中心</li>
+				<li style="border: none;">友情链接</li>
+			</ul>
+			<p>Copyright©2009-2016 gjw.com, All Rights Reserved 上海购酒网电子商务有限公司 版权所有</p>
+		</div>
+	</body>	
+</html>
